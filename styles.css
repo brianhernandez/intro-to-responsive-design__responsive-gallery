@@ -1,0 +1,55 @@
+.thumbnail-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.thumbnail {
+  display: inline-block;
+  max-width: 130px;
+  border: 2px solid gray;
+  border-radius: 2px;
+  /* position: absolute; */
+}
+.feature-image {
+  width: 700px;
+  height: 400px;
+  /* background: url("https://static.pexels.com/photos/512861/pexels-photo-512861.jpeg") no-repeat; */
+  /* background-size: 100%; */
+  /* background-repeat: no-repeat; */
+  background: url("https://user-images.githubusercontent.com/1489880/28579453-c2e2cd62-712a-11e7-8ab0-0ab2795295b1.jpg");
+  background-size: 100%;
+  transition: background .7s ease;
+}
+/* .feature-image img {
+  max-width: 700px;
+} */
+input[value="1"]:checked ~ div {
+  background: url("https://static.pexels.com/photos/512861/pexels-photo-512861.jpeg") no-repeat;
+  background-size: 100%;
+  transition: background .7s ease;
+}
+input[value="2"]:checked ~ div {
+  background: url("https://static.pexels.com/photos/417194/pexels-photo-417194.jpeg") no-repeat;
+  background-size: 100%;
+  transition: background .7s ease;
+}
+input[value="3"]:checked ~ .feature-image {
+  background: url("https://static.pexels.com/photos/163887/lake-water-nature-fischer-163887.jpeg");
+  background-size: 100%;
+  transition: background .7s ease;
+}
+input[value="4"]:checked ~ .feature-image {
+  background: url("https://static.pexels.com/photos/531360/pexels-photo-531360.jpeg");
+  background-size: 100%;
+  transition: background .7s ease;
+}
+input[value="5"]:checked ~ .feature-image {
+  background: url("https://static.pexels.com/photos/50628/pexels-photo-50628.jpeg");
+  background-size: 100%;
+  transition: background .7s ease;
+}
+
+input {
+  display: none;
+}
+
