@@ -1,71 +1,128 @@
-/*html,
-body {
-  height: 100%;
-}*/
 .thumbnail-box {
-  /*position: absolute;*/
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
-  /*top: 10px;*/
-  /*left: 10px;*/
-  border: 1px solid red;
 
-  /*width: 100%;*/
-  height: 100vh;
-  background: url("https://user-images.githubusercontent.com/1489880/28579453-c2e2cd62-712a-11e7-8ab0-0ab2795295b1.jpg") no-repeat;
-  background-size: 100%;
+  width: 100%;
+  height: 95vh;
+  background-size: auto;
+  background-position: center top;
   transition: background .7s ease;
 }
+
 .thumbnail {
-  display: inline-block;
-  max-width: 130px;
   border: 2px solid gray;
   border-radius: 2px;
-  /* position: absolute; */
+  transition: border .7s ease;
 }
-/*.feature-image {*/
-  /*width: 700px;*/
-  /*height: 400px;*/
-  /* background: url("https://static.pexels.com/photos/512861/pexels-photo-512861.jpeg") no-repeat; */
-  /* background-size: 100%; */
-  /* background-repeat: no-repeat; */
-  /*background: url("https://user-images.githubusercontent.com/1489880/28579453-c2e2cd62-712a-11e7-8ab0-0ab2795295b1.jpg");*/
-  /*background-size: 100%;*/
-  /*transition: background .7s ease;*/
-/*}*/
-/* .feature-image img {
-  max-width: 700px;
-} */
-/*input[value="1"]:checked .thumbnail-box label[for="1"] .thumbnail {
-  border: 2px solid red;
-}*/
-input[value="1"]:checked ~ div {
-  background: url("https://static.pexels.com/photos/512861/pexels-photo-512861.jpeg") no-repeat;
-  background-size: 100%;
-  transition: background .7s ease;
+
+.thumbnail:hover,
+.thumbnail:focus {
+  border: 2px solid azure;
 }
-input[value="2"]:checked ~ div {
-  background: url("https://static.pexels.com/photos/417194/pexels-photo-417194.jpeg") no-repeat;
-  background-size: 100%;
-  transition: background .7s ease;
+
+@media (max-width: 360px) {
+  .thumbnail {
+    max-width: 80px;
+  }
+  .thumbnail-box {
+    background: url("img/gallery_1x.jpg") no-repeat center top;
+  }
+  input[value="1"]:checked ~ div{
+    background: url("img/house1_1x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="2"]:checked ~ div{
+    background: url("img/house2_1x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="3"]:checked ~ div{
+    background: url("img/house3_1x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="4"]:checked ~ div{
+    background: url("img/house4_1x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="5"]:checked ~ div{
+    background: url("img/house5_1x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
 }
-input[value="3"]:checked ~ div {
-  background: url("https://static.pexels.com/photos/163887/lake-water-nature-fischer-163887.jpeg") no-repeat;
-  background-size: 100%;
-  transition: background .7s ease;
+
+@media (max-width: 600px) {
+  .thumbnail {
+    max-width: 100px;
+  }
+  .thumbnail-box {
+    background: url("img/gallery_2x.jpg") no-repeat center top;
+  }
+  input[value="1"]:checked ~ div{
+    background: url("img/house1_2x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="2"]:checked ~ div{
+    background: url("img/house2_2x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="3"]:checked ~ div{
+    background: url("img/house3_2x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="4"]:checked ~ div{
+    background: url("img/house4_2x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="5"]:checked ~ div{
+    background: url("img/house5_2x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
 }
-input[value="4"]:checked ~ div {
-  background: url("https://static.pexels.com/photos/531360/pexels-photo-531360.jpeg") no-repeat;
-  background-size: 100%;
-  transition: background .7s ease;
-}
-input[value="5"]:checked ~ div {
-  background: url("https://static.pexels.com/photos/50628/pexels-photo-50628.jpeg") no-repeat;
-  background-size: 100%;
-  transition: background .7s ease;
+
+@media (min-width: 601px) {
+  .thumbnail {
+    max-width: 130px;
+  }
+  .thumbnail-box {
+    background: url("img/gallery_4x.jpg") no-repeat center top;
+  }
+  input[value="1"]:checked ~ div{
+    background: url("img/house1_4x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="2"]:checked ~ div{
+    background: url("img/house2_4x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="3"]:checked ~ div{
+    background: url("img/house3_4x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="4"]:checked ~ div{
+    background: url("img/house4_4x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
+  input[value="5"]:checked ~ div{
+    background: url("img/house5_4x.jpg") no-repeat center top;
+    /*background-size: 100%;*/
+    background-size: auto;
+  }
 }
 
 input {
